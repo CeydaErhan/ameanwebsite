@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
 body{
 	line-height: 1.5;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 12px;
@@ -144,101 +144,6 @@ a{
  .header .menu > .menu-item-has-children:hover > a .plus:after{
     transform: translate(-50%,-50%) rotate(0deg);		
  }
- .start:hover > .exp p{
-    opacity: 1;
-    transform: translate(0);
-    visibility: visible;
-    }
-    .part-1{
-        visibility: visible;
-        opacity: 1;
-        width: 100%;
-        height: 130px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        opacity: 1;
-        visibility: visible;
-    }
-    .part-2{
-        visibility: visible;
-        opacity: 1;
-        width: 100%;
-        height: 130px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .yazi{
-        visibility: visible;
-        opacity: 1;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center; 
-
-    }
-    .start{
-        visibility: visible;
-        opacity: 1;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    .start h4{
-        visibility: visible;
-        text-align: center;
-        opacity: 1;
-    }
-    .start > .exp{
-        display: flex;
-        flex-wrap: wrap;
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .start > .exp p{
-        border: 2px solid black;
-        opacity: 0;
-        position: relative;
-        transform: translateX(10px);
-        transition: all 0.3s ease;
-        visibility: hidden;
-        border-radius: 8px;
-        text-align: center;
-    
-    }
-    
-    .kisa-cizgi{
-        width: 3px;
-        height: 30px;
-        background-color: #000000   ;
-        visibility: visible;
-        opacity: 1;
-    }
-    .long-line{
-        width: 100%;
-        height: 5px;
-        background-color: #000000;
-        visibility: visible;
-        opacity: 1;
-    }
-    .mobile-container{
-        width: 100%;
-        display: none;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 .header .menu > .menu-item > .sub-menu > .menu-item{
 	display: block;
@@ -398,204 +303,56 @@ a{
 	.header .open-nav-menu{
 		display: flex;
 	}
-   .box-2 p{
-    padding-left: 73px;
-    line-height: normal;
-	margin-top: 30px;
-
-   }
-   .konteynir{
-    padding-left: 40px;
-   }
-   .iconlar{
-    margin-bottom: 5px;
-   }
-   .part-1{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .part-2{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .yazi{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .start{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .start h4{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .start > .exp{
-    opacity: 0;
-    visibility: hidden;
-   }
-   .long-line{
-    opacity: 0;
-    visibility: hidden;
-   }
-  x
-   .part-1-mobile{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    
-    flex-wrap: wrap;
-    flex-direction: column;
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-    margin-left: -2px;
-
-   }
-   .yazi-1{
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 100px;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-   }
-   .mobile-container{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    opacity: 1;
-    visibility: visible;
-
-}
-   .mobile-start-ust{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-
-   }
-   .mobile-start-alt{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    margin-right: 50px;
-
-
-   }
-
-   .mobile-start-alt.sag{
-    margin-right: 20px;
-   }
-   .mobile-start-alt h4{
-    text-align: center;
-    opacity: 1;
-    position: relative;
-    margin-right: 44px;
-   }
-   .mobile-start-ust h4{
-    text-align: center;
-    opacity: 1;
-    position: relative;
-    margin-left: 63px;
-   }
-   .mobile-start-ust > .exp {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-   }
-   .mobile-start-alt > .exp {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-   }
-   .mobile-start-ust > .exp p {
-    border: 2px solid black;
-    opacity: 0;
-    position: relative;
-    transform: translateX(10px);
-	transition: all 0.3s ease;
-	visibility: hidden;
-	border-radius: 8px;
-    text-align: center;   
-}
-.mobile-start-alt > .exp p {
-    border: 2px solid black;
-    opacity: 0;
-    position: relative;
-    transform: translateX(10px);
-	transition: all 0.3s ease;
-	visibility: hidden;
-	border-radius: 8px;
-    text-align: center;   
-}
-
-
-}
+	.kronoloji{
+		margin-top: 100px;
+	}
+	.kronoloji-item-detail{
+		position: absolute;
+		width: 100px;
+		top:70%;
+		left: 0;
+	}
+	.kronoloji-bottom-item:hover .title{
+		color: red;
+	}
+	.kronoloji-top-item:hover .title{
+		color: red;
+	}
+	.kronoloji-bottom-item svg{
+		height: 30px;
+		width: 30px;
+	}
+	.kronoloji-top-item svg{
+		height: 30px;
+		width: 30px;
+	}
+}	
 
 /* HEADER FINISH */
-/* MAIN CONTAINER START*/
+/* MAIN CONTINER START */
 .main-container{
     width: 100%;
-    height: 1000px;
 	background: rgb(215, 207, 249);
+
+   justify-content: space-around;
    display: flex;
-        /* justify-content: space-around; */
+    justify-content: space-around;
    align-items: center;
    flex-direction: column;
    flex-wrap: wrap;
    gap: 15px;
 }
-.mobile-container{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.baslangic{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.baslangic > span{
-    display: flex;
-    height: 3px;
-    width: 30px;
-    background-color: #000000;
-}
-.baslangic1{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin-right: 20px;
-}
-.baslangic1 > span{
-    display: flex;
-    height: 3px;
-    width: 30px;
-    background-color: #000000;
-}
-.bos-part{
+
+.part-1{
    width: 100%;
-   height: 130px;
+   height: 30%;
    display: flex;
    align-items: center;
    justify-content: space-around;
    flex-wrap: wrap;
 }
 .slider{
-    width: 1000px;
+    width: 900px;
     height: 300px;
     overflow: hidden;
     box-sizing: border-box;
@@ -608,13 +365,13 @@ a{
     position: relative;
     width: 500%;
     left: 0;
-    animation: 20s slayt infinite;
+    animation: 40s slayt infinite;
     flex-wrap: wrap;
     display: flex;
 }
 .slider-border img{
     width: 20%;
-max-width: 500px;
+max-width: 100%;
 max-height: 300px;
 float: left;
    
@@ -629,137 +386,117 @@ float: left;
     
 
 }
-.part-1-slider{
-    width: 100%;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.yazi-1{
+   width: 40%;
+   height: 100%;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   margin-right: 5px;
 }
-.part-1{
-    width: 100%;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-    margin-top: 300px;
+.yazi-1 h2{
+   margin-bottom: 50px;
+   flex-wrap: wrap;
 }
-.part-2{
-    width: 100%;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    opacity: 1;
-    visibility: visible;
-    position: relative;
+.yazi-1 h2:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    cursor: pointer;
 }
-
-
-.yazi{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-
+.yazi-1 p:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
-.start{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-
-    flex-direction: column;
-    
-}
-.start h4{
-    text-align: center;
-    opacity: 1;
-    position: relative;
-
-}
-.start > .exp{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-
-}
-
-.start > .exp p{
-    border: 2px solid black;
-    opacity: 0;
-    position: relative;
-    transform: translateX(10px);
-	transition: all 0.3s ease;
-	visibility: hidden;
-	border-radius: 8px;
-    text-align: center;
-
-}
-
-.kisa-cizgi{
-    width: 3px;
-    height: 30px;
-    background-color: #000000   ;
-    position: relative;
-
-}
-.long-line{
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    position: relative;
-}
-.mobile-long-line{
-    width: 5px;
-    height: 100%;
-    background-color: #000000;
-}
-
 .cizgi{
-    width: 100%;
+   width: 100%;
    height: 5px;
    background-color: white;
    display: flex;
    align-items: center;
 }
+/* KRONOLOJI CONTAINER START */
+.kronoloji{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* gap: -10px; */
+	justify-content: center;
+}
+.kronoloji-top{
+	width: 90%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.kronoloji-item-detail{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	opacity: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	transition: all ease-in-out .5s;
+	transform: translateY(-5px);
+}
+.kronoloji-top-item:hover .kronoloji-item-detail{
+	opacity: 1;
+	
+}
+
+.kronoloji > .long-line{
+	width: 90%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #7b7b7b;
+}
+.kronoloji-bottom{
+	width: 90%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	gap: 200px;
+}
+.kronoloji-top-item{
+	width: 20%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
+}
+.kronoloji-bottom-item{
+	width: 20%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
+}
+
+.kronoloji-bottom-item:hover .kronoloji-item-detail{
+	opacity: 1;
+	
+}
 
 
 
 
 
 
+/* MAIN CONTAINER FINISH */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTAINER FINISH */
 .footer{
     background: rgb(10,67,90);
     background: linear-gradient(90deg, rgba(10,67,90,0.8410714627647934) 11%, rgba(189,213,220,1) 79%);
@@ -768,10 +505,10 @@ float: left;
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-around;
 	border-top-right-radius: 15px;
 
     border-top-left-radius: 15px;
+    justify-content: space-around;
 }
 
 .orta-part{
@@ -834,7 +571,7 @@ color: black;   margin-top: 15px;
  margin-bottom: 5px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, ;
-	color: #000000;
+    color: #000000;
 }
 .site-harita p:hover{
     text-decoration: underline;
@@ -857,6 +594,7 @@ color: black;   margin-top: 15px;
     justify-content: space-around;
     gap: 10px;
     margin-top:10px
+    
 }
 .sag-part h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -867,12 +605,14 @@ color: black;   margin-top: 15px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .social-icon p:hover{
     transform: scale(1.1);
     border-radius: 5px;
     transition: all ease-in-out .5s;
     cursor: pointer;        
 }
+
 .social-icon .insta-icon:hover{
     color: #FF0066
     ;
