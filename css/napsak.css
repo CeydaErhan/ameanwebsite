@@ -1,5 +1,5 @@
 
- @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
 body{
 	line-height: 1.5;
@@ -143,6 +143,9 @@ a{
  }
  .header .menu > .menu-item-has-children:hover > a .plus:after{
     transform: translate(-50%,-50%) rotate(0deg);		
+ }
+ .main-container h2{
+	margin-bottom: 30px;
  }
 }
 .header .menu > .menu-item > .sub-menu > .menu-item{
@@ -303,7 +306,35 @@ a{
 	.header .open-nav-menu{
 		display: flex;
 	}
-}
+	.kronoloji{
+		margin-top: 100px;
+	}
+	.kronoloji-item-detail{
+		position: absolute;
+		width: 100px;
+		top:70%;
+		left: 0;
+			margin-top: 98px;
+
+	}
+	.kronoloji-bottom-item:hover .title{
+		color: red;
+	}
+	.kronoloji-top-item:hover .title{
+		color: red;
+	}
+	.kronoloji-bottom-item svg{
+		height: 30px;
+		width: 30px;
+	}
+	.kronoloji-top-item svg{
+		height: 30px;
+		width: 30px;
+	}
+	.main-container h2{
+		margin-bottom: 30px;
+	}
+}	
 
 /* HEADER FINISH */
 /* MAIN CONTINER START */
@@ -319,6 +350,7 @@ a{
    flex-wrap: wrap;
    gap: 15px;
 }
+
 .part-1{
    width: 100%;
    height: 30%;
@@ -328,7 +360,7 @@ a{
    flex-wrap: wrap;
 }
 .slider{
-    width: 500px;
+    width: 900px;
     height: 300px;
     overflow: hidden;
     box-sizing: border-box;
@@ -341,15 +373,18 @@ a{
     position: relative;
     width: 500%;
     left: 0;
-    animation: 20s slayt infinite;
+    animation: 40s slayt infinite;
     flex-wrap: wrap;
     display: flex;
 }
 .slider-border img{
     width: 20%;
-max-width: 500px;
+max-width: 100%;
 max-height: 300px;
 float: left;
+object-fit: fill;
+	border-radius: 10px	;
+
    
 }
 @keyframes slayt{
@@ -372,7 +407,7 @@ float: left;
    margin-right: 5px;
 }
 .yazi-1 h2{
-   margin-bottom: 30px;
+   margin-bottom: 50px;
    flex-wrap: wrap;
 }
 .yazi-1 h2:hover{
@@ -380,54 +415,9 @@ float: left;
     transition: all ease 0.5s;
     cursor: pointer;
 }
-.yazi-1 p{
-	margin-bottom: 20px;
-}
 .yazi-1 p:hover{
     transform: scale(1.1);
     transition: all ease 0.5s;
-}
-.btn{
-	border: 1px solid #316174;
-	background: none;
-	/* padding: 10px 20px; */
-	font-size: 20px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	cursor: pointer;
-	margin: auto;
-	transition: 0.8s;
-	position: relative;
-	overflow: hidden;
-	width: 100px;
-	height: 50px;
-	text-align: center;
-	border-radius: 20px;
-}
-.btn{
-	color: #316174;
-}
-.btn:hover{
-	color:black;
-	border: 1px solid black;
-	box-shadow: rgba(78, 46, 240, 0.4) 0px 5px, rgba(62, 46, 240, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;	
-}
-.btn::before{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	background-color: #316174;
-	z-index: -1;
-	transition: 0.8s;
-}
-.btn::before{
-	top: 0;
-	border-radius: 0 0 50% 50%;
-}
-.btn:hover::before {
-	height: 180px;
-
 }
 .cizgi{
    width: 100%;
@@ -436,6 +426,89 @@ float: left;
    display: flex;
    align-items: center;
 }
+/* KRONOLOJI CONTAINER START */
+.kronoloji{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* gap: -10px; */
+	justify-content: center;
+}
+.kronoloji-top{
+	width: 90%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.kronoloji-item-detail{
+	width: 100%;
+	height: 100px;
+	border:1px solid black;
+	display: flex;
+	opacity: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	transition: all ease-in-out .5s;
+	transform: translateY(-5px);
+}
+.kronoloji-top-item:hover .kronoloji-item-detail{
+	opacity: 1;
+	
+}
+
+.kronoloji > .long-line{
+	width: 90%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #7b7b7b;
+}
+.kronoloji-bottom{
+	width: 90%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	gap: 200px;
+}
+.kronoloji-top-item{
+	width: 20%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
+}
+.kronoloji-bottom-item{
+	width: 20%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
+}
+
+.kronoloji-bottom-item:hover .kronoloji-item-detail{
+	opacity: 1;
+	
+}
+
+
+
+
+
+
+/* MAIN CONTAINER FINISH */
+
 .footer{
     background: rgb(10,67,90);
     background: linear-gradient(90deg, rgba(10,67,90,0.8410714627647934) 11%, rgba(189,213,220,1) 79%);
