@@ -2,21 +2,26 @@
 
 body {
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
 }
+
 body::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);        /* color of the tracking area */
-  }
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    /* color of the tracking area */
+}
+
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(201, 199, 198);    /* color of the scroll thumb */
-    border-radius: 20px;  
-  }
+    background-color: rgb(201, 199, 198);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+}
+
 body.hidden-scrolling {
     overflow-y: hidden;
 }
@@ -52,7 +57,8 @@ a {
 }
 
 .header-main {
-    background-color: #e0e0e0bd;
+    background-color: #e0e0e02c;
+    box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,7 +93,7 @@ a {
 .header .menu>.menu-item>a {
     display: block;
     padding: 12px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
     text-transform: capitalize;
     font-weight: 600;
@@ -358,42 +364,48 @@ a {
     .iconlar {
         margin-bottom: 5px;
     }
-    .part-1{
+
+    .part-1 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    
+
 }
 
 /* HEADER FINISH */
 /* MAIN CONTAINER START*/
-.main-container{
+.main-container {
     width: 100%;
-    background: rgb(215, 207, 249);
-   justify-content: space-around;
-   display: flex;
+    background-color: #bcbcbc;
     justify-content: space-around;
-   align-items: center;
-   flex-direction: column;
-   flex-wrap: wrap;
-   gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
 }
- h2{
+
+h2 {
     font-weight: bold;
-    
+
     letter-spacing: 2px;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
-.part-1{
-   width: 100%;
-   height: 30%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
+
+.part-1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 120px;
 }
-.slider{
+
+.slider {
     width: 40%;
     height: 300px;
     overflow: hidden;
@@ -403,64 +415,71 @@ a {
     object-fit: cover;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
-.slider img{
+
+.slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.slider:hover{
+
+.slider:hover {
     transform: scale(1.05);
     transition: all ease 0.5s;
 }
 
 
-.yazi-1{
-   width: 40%;
-   height: 100%;
-   text-align: center;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   margin-right: 5px;
-   font-size:20px;
-   font-weight: 500;
+.yazi-1 {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 500;
 }
-.yazi-1 h2{
-   margin-bottom: 50px;
-   flex-wrap: wrap;
+
+.yazi-1 h2 {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 
 }
-.yazi-1 h2:hover{
+
+.yazi-1 h2:hover {
     transform: scale(1.1);
     transition: all ease 0.5s;
     cursor: pointer;
 }
-.yazi-1 p:hover{
+
+.yazi-1 p:hover {
     transform: scale(1.1);
     transition: all ease 0.5s;
 }
-.cizgi{
+
+.cizgi {
     width: 80%;
     height: 3px;
     margin-top: 150px;
     background-color: #e0e0e0;
 }
-.cizgi-2{
+
+.cizgi-2 {
     width: 80%;
     height: 3px;
-    background-color: #e0e0e0;
+    background-color: #ffa27e;
     display: flex;
     align-items: center;
- }
- 
+}
+
 
 /*MAIN CONTAINER FINISH */
-.footer{
-    background: rgb(10,67,90);
-    background: linear-gradient(90deg, rgba(11, 99, 134, 0.841) 11%, rgba(189,213,220,1) 79%);
-     display: flex;
+.footer {
+   background: rgb(241,203,168);
+	background: radial-gradient(circle, rgba(241,203,168,1) 39%, rgba(255,179,149,1) 72%);
+    display: flex;
     flex-wrap: wrap;
     display: flex;
     gap: 10px;
@@ -471,69 +490,80 @@ a {
     border-top-left-radius: 15px;
 }
 
-.orta-part{
+.orta-part {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    }
-.orta-part i{
-    color:black;
 }
-.orta-part i:hover{
+
+.orta-part i {
+    color: black;
+}
+
+.orta-part i:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: all ease-in-out .5s;
 }
-.orta-part p{
+
+.orta-part p {
     font-size: 500;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.orta-part p:hover{
+
+.orta-part p:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: all ease-in-out .5s;
     border-radius: 5px;
 }
-.orta-part .mail{
-display: flex;
-flex-wrap: wrap;
-text-align: center;
-font-size: 500;
-font-weight: bolder;
-font-family: Georgia, 'Times New Roman', Times, serif;
+
+.orta-part .mail {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 500;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.sol-part{
+
+.sol-part {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     flex-direction: column;
-  
+
 }
 
-.sol-part h2{
-      font-family: Georgia, 'Times New Roman', Times, serif;
+.sol-part h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
-    }
-.sol-part h2:hover{
+}
+
+.sol-part h2:hover {
     transform: scale(1.1);
     transition: all ease 0.3s;
     cursor: pointer;
 }
-.site-harita{
-color: black;   margin-top: 15px;
+
+.site-harita {
+    color: black;
+    margin-top: 15px;
 
 }
-.site-harita p{
- font-weight: bold;
- margin-bottom: 5px;
+
+.site-harita p {
+    font-weight: bold;
+    margin-bottom: 5px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times,serif ;
-	color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
 }
-.site-harita p:hover{
+
+.site-harita p:hover {
     text-decoration: underline;
     transform: scale(1.1);
     transition: all ease 0.3s;
@@ -541,56 +571,63 @@ color: black;   margin-top: 15px;
 }
 
 
-.sag-part{
+.sag-part {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.social-icon{
+
+.social-icon {
     display: flex;
     align-items: center;
     width: 300px;
     justify-content: space-around;
     gap: 10px;
-    margin-top:10px
+    margin-top: 10px
 }
-.sag-part h2{
+
+.sag-part h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
-.social-icon p{
+
+.social-icon p {
     font-weight: bold;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.social-icon p:hover{
+
+.social-icon p:hover {
     transform: scale(1.1);
     border-radius: 5px;
     transition: all ease-in-out .5s;
-    cursor: pointer;        
+    cursor: pointer;
 }
-.social-icon .insta-icon:hover{
-    color: #FF0066
-    ;
+
+.social-icon .insta-icon:hover {
+    color: #FF0066;
     transform: scale(1.1);
     transition: all ease-in-out .5s;
     cursor: pointer;
 }
-.social-icon .face-icon:hover{
-    color: #000099   ;
+
+.social-icon .face-icon:hover {
+    color: #000099;
     transform: scale(1.1);
     transition: all ease-in-out .5s;
     cursor: pointer;
 }
-.social-icon .yt-icon:hover{
-    color:red;
+
+.social-icon .yt-icon:hover {
+    color: red;
     transform: scale(1.1);
     transition: all ease-in-out .5s;
     cursor: pointer;
 }
-.social-icon .tw-icon:hover{
-    color: #0066FF    ;
+
+.social-icon .tw-icon:hover {
+    color: #0066FF;
     transform: scale(1.1);
     transition: all ease-in-out .5s;
     cursor: pointer;

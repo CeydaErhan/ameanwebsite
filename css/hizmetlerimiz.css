@@ -1,9 +1,10 @@
- @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 body{
 	line-height: 1.5;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
 }
 body::-webkit-scrollbar {
@@ -57,7 +58,8 @@ a{
 	
 }
 .header-main{
-	background-color: #e0e0e0bd;
+	background-color: #e0e0e02c;
+    box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -88,7 +90,7 @@ a{
 .header .menu > .menu-item > a{
 	display: block;
 	padding: 12px 0;
-	font-size: 16px;
+	font-size: 18px;
 	color: #000000;
 	text-transform: capitalize;
 	font-weight: 600;
@@ -320,8 +322,7 @@ a{
 /* MAIN CONTINER START */
 .main-container{
     width: 100%;
-	background: rgb(215, 207, 249);
-
+	background-color: rgba(128, 128, 128, 0.34);
    justify-content: space-around;
    display: flex;
     justify-content: space-around;
@@ -356,6 +357,8 @@ a{
    flex-wrap: wrap;
    flex-direction: column;
    margin-right: 5px;
+   font-size: 18px;
+   color: rgb(0, 0, 0);
 }
 .yazi-1:hover{
     transform: scale(1.1);
@@ -374,15 +377,15 @@ a{
 }
 .cizgi{
    width: 100%;
-   height: 5px;
-   background-color: white;
+   height: 3px;
+   background-color:  #ffa27e;
    display: flex;
    align-items: center;
 }
 /* CONTAINER FINISH */
 .footer{
-    background: rgb(10,67,90);
-    background: linear-gradient(90deg, rgba(10,67,90,0.8410714627647934) 11%, rgba(189,213,220,1) 79%);
+	background: rgb(241,203,168);
+	background: radial-gradient(circle, rgba(241,203,168,1) 39%, rgba(255,179,149,1) 72%);
      display: flex;
     flex-wrap: wrap;
     display: flex;
