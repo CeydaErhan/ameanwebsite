@@ -38,7 +38,7 @@ a{
 }
 /*header*/
 .header{
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	left:0;
 	top:0;
@@ -394,12 +394,13 @@ float: left;
 	/* padding: 10px 20px; */
 	font-size: 20px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
 	cursor: pointer;
 	margin: auto;
 	transition: 0.8s;
 	position: relative;
 	overflow: hidden;
-	width: 100px;
+	width: 164px;
 	height: 50px;
 	text-align: center;
 	border-radius: 10px;
@@ -408,8 +409,7 @@ float: left;
 	color: #316174;
 }
 .btn:hover{
-	color:black;
-	border: 1px solid black;
+	color:white;
 	
 }
 .btn::before{
@@ -421,11 +421,10 @@ float: left;
 	background-color: #316174;
 	z-index: -1;
 	transition: 0.8s;
-}
-.btn::before{
 	top: 0;
 	border-radius: 0 0 50% 50%;
 }
+
 .btn:hover::before {
 	height: 180px;
 

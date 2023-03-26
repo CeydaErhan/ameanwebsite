@@ -63,7 +63,7 @@ a {
 
 /*header*/
 .header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -460,7 +460,7 @@ a {
 	height: 250px;
 	margin-bottom: 15px;
 	object-fit: cover;
-	border: 2px solid black;
+	border-radius: 20px;
 }
 
 .box-1 img:hover {
