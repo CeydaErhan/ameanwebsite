@@ -2,8 +2,7 @@
 
 body {
     line-height: 1.5;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     overflow-x: hidden;
 }
 
@@ -57,16 +56,17 @@ a {
 }
 
 .header-main {
-    background-color: #e0e0e02c;
+    background-color: #e0e0e0c8;
     box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    border-radius: 4px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	border-radius: 4px;
     height: 120px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	backdrop-filter: blur(5px);
 }
 
 .header .logo {
@@ -264,7 +264,7 @@ a {
         right: -280px;
         visibility: hidden;
         width: 280px;
-        height: 100%;
+        height: 145vh;
         top: 0;
         overflow-y: auto;
         background-color: #222222;
@@ -370,6 +370,9 @@ a {
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .main-container h1{
+        font-size: 18px;
+    }
 
 }
 
@@ -387,11 +390,16 @@ a {
     gap: 15px;
 }
 
-h2 {
-    font-weight: bold;
-
-    letter-spacing: 2px;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+.main-container h1{
+	font-weight: bold;
+    margin-top: 10px;
+	width: 60%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center	;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	background-color: rgba(208, 199, 199, 0.459);
 }
 
 .part-1 {
@@ -415,6 +423,7 @@ h2 {
     object-fit: cover;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 
 }
 
@@ -485,9 +494,6 @@ h2 {
     gap: 10px;
     align-items: center;
     justify-content: space-around;
-    border-top-right-radius: 15px;
-
-    border-top-left-radius: 15px;
 }
 
 .orta-part {
@@ -511,7 +517,6 @@ h2 {
 .orta-part p {
     font-size: 500;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .orta-part p:hover {
@@ -527,7 +532,6 @@ h2 {
     text-align: center;
     font-size: 500;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sol-part {
@@ -539,7 +543,6 @@ h2 {
 }
 
 .sol-part h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 
@@ -559,7 +562,6 @@ h2 {
     font-weight: bold;
     margin-bottom: 5px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
 }
 
@@ -588,14 +590,12 @@ h2 {
 }
 
 .sag-part h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 
 .social-icon p {
     font-weight: bold;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .social-icon p:hover {

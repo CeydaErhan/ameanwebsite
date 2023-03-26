@@ -3,7 +3,7 @@
 
 body{
 	line-height: 1.5;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-weight: 400;
 }
 body::-webkit-scrollbar {
@@ -47,15 +47,16 @@ a{
 }
 .header-main{
 	background-color: #e0e0e02c;
-    box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 10px 0;
 	border-radius: 4px;
-    height: 120px;
-    border-bottom-left-radius: 10px;
+	height: 120px;
+	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	backdrop-filter: blur(5px);
+	box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px; 
 }
 .header .logo{
 	padding: 0 15px;
@@ -334,6 +335,7 @@ a{
 	}
 	.main-container h2{
 		margin-bottom: 30px;
+		font-size: 15px;
 	}
 }	
 
@@ -350,7 +352,18 @@ a{
    flex-wrap: wrap;
    gap: 15px;
 }
+.main-container h2{
+	font-weight: bold;
+    margin-top: 10px;
+	width: 60%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center	;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	background-color: rgba(208, 199, 199, 0.459);
 
+}
 .part-1{
    width: 100%;
    height: 30%;
@@ -435,6 +448,7 @@ object-fit: fill;
 	/* gap: -10px; */
 	justify-content: center;
 }
+
 .kronoloji-top{
 	width: 90%;
 	height: 200px;
@@ -515,9 +529,6 @@ object-fit: fill;
     display: flex;
     gap: 10px;
     align-items: center;
-	border-top-right-radius: 15px;
-
-    border-top-left-radius: 15px;
     justify-content: space-around;
 }
 
@@ -539,7 +550,6 @@ object-fit: fill;
 .orta-part p{
     font-size: 500;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .orta-part p:hover{
     transform: scale(1.1);
@@ -553,7 +563,6 @@ flex-wrap: wrap;
 text-align: center;
 font-size: 500;
 font-weight: bolder;
-font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sol-part{
     flex-wrap: wrap;
@@ -564,7 +573,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sol-part h2{
-      font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 .sol-part h2:hover{
@@ -580,7 +588,6 @@ color: black;   margin-top: 15px;
  font-weight: bold;
  margin-bottom: 5px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, ;
     color: #000000;
 }
 .site-harita p:hover{
@@ -607,13 +614,11 @@ color: black;   margin-top: 15px;
     
 }
 .sag-part h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 .social-icon p{
     font-weight: bold;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .social-icon p:hover{

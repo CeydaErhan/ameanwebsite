@@ -2,7 +2,7 @@
 
 body{
 	line-height: 1.5;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 	font-weight: 400;
 }
 body::-webkit-scrollbar {
@@ -46,15 +46,16 @@ a{
 }
 .header-main{
 	background-color: #e0e0e02c;
-    box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 10px 0;
 	border-radius: 4px;
-    height: 120px;
-    border-bottom-left-radius: 10px;
+	height: 120px;
+	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	backdrop-filter: blur(5px);
+	box-shadow: rgba(38, 57, 77, 0.562) 0px 20px 30px -10px;   
 }
 .header .logo{
 	padding: 0 15px;
@@ -229,7 +230,7 @@ a{
 		right: -280px;
 		visibility: hidden;
 		width: 280px;
-		height: 100%;
+		height: 145vh;
 		top:0;
 		overflow-y: auto;
 		background-color: #222222;
@@ -307,6 +308,14 @@ a{
         min-width: 300px;
         
     }
+	.contact-box textarea{
+		min-width: 300px;
+	}
+	
+	.main-container h1 {
+		margin-bottom: 30px;
+		font-size: 15px;
+	}
 }
 
 /* HEADER FINISH */
@@ -319,6 +328,19 @@ a{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+.main-container h1{
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+    margin-top: 10px;
+	width: 60%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center	;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	background-color: rgba(208, 199, 199, 0.459);
+
 }
 .part-1{
     width: 100%;
@@ -382,6 +404,7 @@ padding-top: 20px;
 padding-bottom: 20px;
 border: none;
 }
+
 button{
     width: 100px;
     height: 30px;
@@ -420,9 +443,7 @@ button:hover{
     gap: 10px;
     align-items: center;
     justify-content: space-around;
-	border-top-right-radius: 15px;
 
-    border-top-left-radius: 15px;
 }
 
 .orta-part{
@@ -443,7 +464,6 @@ button:hover{
 .orta-part p{
     font-size: 500;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .orta-part p:hover{
     transform: scale(1.1);
@@ -457,7 +477,6 @@ flex-wrap: wrap;
 text-align: center;
 font-size: 500;
 font-weight: bolder;
-font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sol-part{
     flex-wrap: wrap;
@@ -468,7 +487,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sol-part h2{
-      font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 .sol-part h2:hover{
@@ -484,7 +502,6 @@ color: black;   margin-top: 15px;
  font-weight: bold;
  margin-bottom: 5px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #000000;
 }
 .site-harita p:hover{
@@ -510,13 +527,11 @@ color: black;   margin-top: 15px;
     margin-top:10px
 }
 .sag-part h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
 }
 .social-icon p{
     font-weight: bold;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .social-icon p:hover{
     transform: scale(1.1);
